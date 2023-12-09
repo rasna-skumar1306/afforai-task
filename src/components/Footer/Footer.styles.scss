@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex: 1 0;
+  padding: 3rem 0 0;
+
+  &-container {
+    display: flex;
+    max-width: 1264px;
+    padding: 32px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 16px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 1.5rem;
+      flex-basis: 360px;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 160px;
+      gap: 16px;
+      color: rgb(82, 82, 82);
+      font-size: 12px;
+
+      .col-header {
+        color: rgb(17, 17, 17);
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .sub-text {
+    color: rgb(82, 82, 82);
+    font-size: 13px;
+  }
+
+  .copy {
+    color: rgb(82, 82, 82);
+    font-size: 13px;
+  }
+  .logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .ph-logo {
+    width: 195px;
+    height: 42px;
+  }
+
+  .sputnik-container {
+    display: flex;
+    flex-direction: column;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+    font-size: 16px;
+    img {
+      margin-top: 8px;
+    }
+  }
+}
