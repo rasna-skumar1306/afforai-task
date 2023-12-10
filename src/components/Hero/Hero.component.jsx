@@ -43,17 +43,27 @@ const Hero = () => {
           <div className="img-1">
             <img
               src="https://afforai.com/img/graphics/laptop-landing-1.png"
-              class="img-fluid"
               width="100%"
             />
           </div>
           <div className="img-2">
             <img
               src="https://afforai.com/img/graphics/laptop-landing-3.png"
-              class="img-fluid"
               width="100%"
             />
           </div>
+        </div>
+
+        <div className="customers">
+          <div>
+            Loved by <span>20,000+</span> users around the world
+          </div>
+          <img
+            src="https://afforai.com/img/graphics/laptop-landing-2.png"
+            alt="users"
+            width="336"
+            height="48"
+          />
         </div>
       </div>
     </div>
