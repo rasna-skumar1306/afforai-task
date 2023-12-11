@@ -17,8 +17,6 @@ const Testimonial = () => {
         duplicateItem.setAttribute("aria-hidden", true);
         scrollerInner.appendChild(duplicateItem);
       });
-
-      console.log(scrollerContent);
     });
   };
 
