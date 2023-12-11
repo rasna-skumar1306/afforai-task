@@ -4,6 +4,28 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  max-width: 1600px;
+  margin: 160px auto;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    background: linear-gradient(
+      90deg,
+      #fff 0,
+      hsla(0, 0%, 100%, 0) 15%,
+      hsla(0, 0%, 100%, 0) 85%,
+      #fff
+    );
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
   .testimonial-heading {
     color: rgb(34, 34, 34);
     font-weight: 600;
@@ -25,23 +47,7 @@
 
   .infinite-scroll-outer-loop {
     position: relative;
-
-    &:after {
-      background: linear-gradient(
-        90deg,
-        #fff 0,
-        hsla(0, 0%, 100%, 0) 15%,
-        hsla(0, 0%, 100%, 0) 85%,
-        #fff
-      );
-      content: "";
-      height: 100%;
-      left: 0;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
+    padding: 0 1.5rem;
   }
 
   .infinite-scroll-inner-loop {
