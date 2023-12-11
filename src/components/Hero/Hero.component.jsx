@@ -3,7 +3,7 @@ import TickLogo from "../../assets/tick.svg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero container-fluid">
       <div className="hero-container">
         <div className="promo">{/* appsumo promo */}</div>
         <div className="main-text">

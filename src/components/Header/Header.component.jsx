@@ -2,7 +2,7 @@ import "./header.styles.scss";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header container-fluid">
       <nav className="navbar">
         <div className="logo">
           <img
