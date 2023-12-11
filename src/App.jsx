@@ -1,4 +1,5 @@
 import "./App.scss";
+import FAQs from "./components/Faq/Faqs.component";
 import Footer from "./components/Footer/Footer.component";
 import Header from "./components/Header/Header.component";
 import Hero from "./components/Hero/Hero.component";
@@ -12,7 +13,7 @@ function App() {
       <Hero />
       <Marketing />
       <Testimonial />
-      {/* faq */}
+      <FAQs />
       <Footer />
     </div>
   );
