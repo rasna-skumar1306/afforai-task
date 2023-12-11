@@ -1,0 +1,134 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  .testimonial-heading {
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+  }
+  .subtext {
+    color: rgb(82, 82, 82);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .infinite-scroll-outer-loop {
+    position: relative;
+
+    &:after {
+      background: linear-gradient(
+        90deg,
+        #fff 0,
+        hsla(0, 0%, 100%, 0) 15%,
+        hsla(0, 0%, 100%, 0) 85%,
+        #fff
+      );
+      content: "";
+      height: 100%;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .infinite-scroll-inner-loop {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    animation: 50s slide infinite linear;
+    scrollbar-width: none;
+  }
+  .infinite-scroll-inner-loop::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row-1 {
+    .infinite-scroll-inner-loop {
+      animation: 120s slide-rev infinite linear;
+    }
+  }
+
+  .line {
+    display: inline;
+  }
+  .testimonial {
+    display: inline-block;
+    margin-right: 20px;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      height: 266px;
+      padding: 32px;
+      border: 1px solid rgb(230, 230, 230);
+      border-radius: 0.5rem;
+    }
+    &-content {
+      flex-grow: 1;
+      color: rgb(34, 34, 34);
+      font-size: 16px;
+      border-bottom: 1px solid rgb(230, 230, 230);
+      white-space: normal;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(246, 232, 229);
+      border: 1px solid rgb(255, 60, 5);
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.5rem;
+    }
+    .name-container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5rem;
+    }
+    .name {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      color: rgb(82, 82, 82);
+      font-size: 14px;
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+    .ph-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      color: rgb(255, 58, 2);
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-rev {
+  to {
+    transform: translateX(50%);
+  }
+}

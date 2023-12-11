@@ -31,7 +31,7 @@ const Footer = () => {
               height="42"
             />
           </a>
-          <div class="sputnik-container">
+          <div className="sputnik-container">
             <div>Backed by</div>
             <img
               src="https://afforai.com/img/logos/sputnikatx.png"
@@ -49,7 +49,7 @@ const Footer = () => {
           <a href="https://afforai.getrewardful.com/signup" target="_blank">
             <div>Affiliate</div>
           </a>
-          <a href="/security" class="policy">
+          <a href="/security">
             <div>Security</div>
           </a>
           <a
@@ -67,13 +67,13 @@ const Footer = () => {
           <a href="https://help.afforai.com/" target="_blank">
             <div>Help Center</div>
           </a>
-          <a href="/documentation" class="policy">
+          <a href="/documentation">
             <div>API Docs</div>
           </a>
-          <a href="/terms_of_use" class="policy">
+          <a href="/terms_of_use">
             <div>Terms of Use</div>
           </a>
-          <a href="/privacy_policy" class="policy">
+          <a href="/privacy_policy">
             <div>Privacy Policy</div>
           </a>
         </div>
